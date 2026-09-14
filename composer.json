@@ -1,0 +1,67 @@
+{
+    "name": "alto/code-kit",
+    "description": "Compose source slicing and semantic highlighting into immutable annotated code snippets.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "code",
+        "source-code",
+        "snippet",
+        "annotations",
+        "code-slicing",
+        "syntax-highlighting"
+    ],
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://altophp.com/code-kit",
+    "support": {
+        "issues": "https://github.com/altophp/code-kit/issues",
+        "source": "https://github.com/altophp/code-kit",
+        "docs": "https://altophp.com/code-kit"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "alto/code-highlight": "^1.1",
+        "alto/code-slicer": "^0.7",
+        "alto/code-snippet": "^0.7"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.94",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\Code\\Kit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alto\\Code\\Kit\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix --dry-run --diff --sequential",
+        "cs:fix": "vendor/bin/php-cs-fixer fix --sequential",
+        "qa": [
+            "@cs",
+            "@sa",
+            "@test"
+        ],
+        "sa": "vendor/bin/phpstan analyse --memory-limit=-1",
+        "test": "vendor/bin/phpunit"
+    }
+}
