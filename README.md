@@ -1,4 +1,4 @@
-# ALTO CodeKit
+# ALTO Code Kit
 
 Compose source slicing and semantic highlighting into immutable annotated code snippets.
 
@@ -8,7 +8,7 @@ Compose source slicing and semantic highlighting into immutable annotated code s
 &nbsp; ![License](https://img.shields.io/github/license/altophp/code-kit?label=License&labelColor=050608&color=00B7FF)
 &nbsp; [![GitHub Sponsors](https://img.shields.io/github/sponsors/smnandre?logo=githubsponsors&logoColor=00B7FF&label=%20Sponsor&labelColor=050608&color=00B7FF)](https://github.com/sponsors/smnandre)
 
-CodeKit connects CodeSlicer, CodeHighlight, and CodeSnippet. It selects source code, derives semantic
+Code Kit connects Code Slicer, Code Highlight, and Code Snippet. It selects source code, derives semantic
 syntax annotations, and returns a renderer-independent snippet while preserving source context.
 
 ```php
@@ -32,11 +32,11 @@ Install ALTO CodeKit with Composer:
 composer require alto/code-kit
 ```
 
-CodeKit requires PHP 8.4 or later. It installs CodeSlicer, CodeHighlight, and CodeSnippet.
+Code Kit requires PHP 8.4 or later. It installs Code Slicer, Code Highlight, and Code Snippet.
 
 ## Complete-source parsing
 
-CodeKit parses the complete source before projecting the selected range. Context-sensitive syntax
+Code Kit parses the complete source before projecting the selected range. Context-sensitive syntax
 therefore remains correct when a slice starts inside a docblock, string, heredoc, or embedded
 language.
 
@@ -74,11 +74,12 @@ unannotated.
 
 ## Package boundary
 
-CodeKit owns orchestration only. CodeSlicer locates source ranges, CodeHighlight parses syntax, and
-CodeSnippet carries the immutable result. Rendering to HTML, SVG, PNG, terminals, or slides belongs
+Code Kit owns orchestration only. Code Slicer locates source ranges, Code Highlight parses syntax, and
+Code Snippet carries the immutable result. Rendering to HTML, SVG, PNG, terminals, or slides belongs
 to consumers.
 
-See the [documentation](docs/index.md) for installation, a guided example, and the public API.
+Read the [documentation](docs/index.md), then continue with
+[Installation](docs/installation.md) and [Getting started](docs/getting-started.md).
 
 ## Contributing
 
