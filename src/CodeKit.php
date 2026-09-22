@@ -19,7 +19,7 @@ use Alto\Code\Snippet\CodeAnnotation;
 use Alto\Code\Snippet\CodeSnippet;
 
 /**
- * @author Simon André <smnandre@gmail.com>
+ * @author Simon André <smn.andre@gmail.com>
  */
 final readonly class CodeKit
 {
